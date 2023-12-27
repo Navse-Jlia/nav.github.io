@@ -8,7 +8,7 @@ body {
 @font-face {
     font-family: 'TT Lakes';
     src: local("TT Lakes Regular"),
-        url('./assets/font/TTLakes-Regular.woff') format("woff"),
+        url('../assets/font/TTLakes-Regular.woff') format("woff"),
         url('./assets/font/TTLakes-Regular.eot') format('embedded-opentype');
     font-weight: 400;
     font-style: normal;
@@ -18,7 +18,7 @@ body {
 @font-face {
     font-family: 'TT Lakes';
     src: local("TT Lakes Medium"),
-        url('./assets/font/TTLakes-Medium.woff') format("woff"),
+        url('../assets/font/TTLakes-Medium.woff') format("woff"),
         url('./assets/font/TTLakes-Medium.eot') format('embedded-opentype');
     font-weight: 500;
     font-style: normal;
@@ -28,7 +28,7 @@ body {
 @font-face {
     font-family: 'TT Lakes';
     src: local("TT Lakes Bold"),
-        url('./assets/font/TTLakes-Bold.woff') format("woff"),
+        url('../assets/font/TTLakes-Bold.woff') format("woff"),
         url('./assets/font/TTLakes-Bold.eot') format('embedded-opentype');
     font-weight: 700;
     font-style: normal;
