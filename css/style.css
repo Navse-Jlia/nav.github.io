@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    background-color: white;
+    font-family: 'TT Lakes';
+}
+
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: local("TT Lakes Regular"),
+        url('../font/TTLakes-Regular.woff') format("woff"),
+        url('../font/TTLakes-Regular.eot') format('embedded-opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: local("TT Lakes Medium"),
+        url('../font/TTLakes-Medium.woff') format("woff"),
+        url('../font/TTLakes-Medium.eot') format('embedded-opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: local("TT Lakes Bold"),
+        url('../font/TTLakes-Bold.woff') format("woff"),
+        url('../font/TTLakes-Bold.eot') format('embedded-opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+.main-container {
+    width: 320px;
+}
+
+.header {
+    min-height: auto;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    flex-wrap: nowrap;
+}
+
+.fixed-block {
+    width: 320px;
+    position: fixed;
+    left: 0;
+    top: 30px;
+    transform: translateY(-50%);
+    background-color: white;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.button {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: filter 0.3s ease-in-out;
+    /* Плавный переход для свойства filter */
+}
+
+.button:hover {
+    filter: brightness(0.8);
+    /* При наведении изменяем яркость */
+}
+
+.button--item1 {
+    background-image: url("../img/burger.png");
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.header-container__logo {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.button--item2 {
+    background-image: url("../img/search.png");
+    margin-top: 15px;
+    margin-left: 80px;
+}
+
+.section-container-paragraph {
+    display: inline-block;
+}
+
+.main-section__paragraph_grey {
+    color: #7E7E82;
+    margin-top: 100px;
+    margin-left: 24px;
+    min-width: 120px;
+    height: 24px;
+    position: relative;
+}
+
+.main-section__paragraph_grey::before {
+    content: '';
+    position: absolute;
+    left: -22px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    /* Толщина границы */
+    background-color: #41F6D7;
+    ;
+    /* Цвет границы */
+}
+
+.main-section__paragraph_grey .main-section__paragraph {
+    font-size: 16px;
+    line-height: 3.5;
+}
+
+.main-section__paragraph span {
+    display: block;
+    /* Каждая строка на новой линии */
+    margin-bottom: 20px;
+    margin-top: 25px;
+    /* Отступ снизу */
+    margin-left: 24px;
+    color: #1B1C21;
+    font-weight: 400;
+}
+
+
+
+.button--item3 {
+    width: 40px;
+    height: 40px;
+    margin-top: 300px;
+    margin-left: 24px;
+}
+
+.button--item4 {
+    width: 40px;
+    height: 40px;
+    margin-top: -39px;
+    margin-left: 80px;
+}
+
+.button--item5 {
+    width: 40px;
+    height: 40px;
+    margin-top: -39px;
+    margin-left: 135px;
+}
+
+.footer__mail {
+    margin-left: 24px;
+}
+
+.footer__number {
+    font-family: TT Lakes;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6000000238418579px;
+    text-align: left;
+    font-weight: 700;
+    margin-left: 24px;
+}
+
+.footer__lang_gray {
+    color: #7E7E82;
+    width: 25px;
+    height: 24px;
+    margin-left: 24px;
+    margin-top: 50px;
+}
+
+.footer__lang_en {
+    width: 24px;
+    height: 24px;
+    margin-top: -40px;
+    margin-left: 60px;
+}
+
+.footer__lang_ch {
+    width: 24px;
+    height: 24px;
+    margin-top: -40px;
+    margin-left: 100px;
+}
