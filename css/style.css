@@ -2,6 +2,7 @@ body {
     margin: 0;
     background-color: white;
     font-family: 'TT Lakes';
+    height: 100%;
 }
 
 @font-face {
@@ -83,8 +84,11 @@ body {
     margin-left: 20px;
 }
 
-.header-container__logo {
-    margin-top: 15px;
+.logo {
+    width: 98px;
+    height: 52px;
+    background-image: url('../img/Groupa.png');
+    margin-top: 18px;
     margin-left: 15px;
 }
 
@@ -167,14 +171,24 @@ body {
     margin-top: 30px;
 }
 
+.footer__mail {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 24px;
+    color: black;
+}
+
 .footer__number {
+    display: flex;
     font-family: TT Lakes;
     font-size: 24px !important;
     line-height: 32px;
     letter-spacing: -0.6000000238418579px;
     text-align: left;
     font-weight: 700 !important;
-    margin-top: 10px !important;
+    margin-top: 10px;
+    margin-left: 24px;
+    color: black;
 }
 
 .footer__lang-list {
@@ -201,4 +215,27 @@ body {
 .footer__lang_ch {
     margin-top: -24px;
     margin-left: 100px;
+}
+
+@media only screen and (max-height: 768px) {
+    .button--item3 {
+        width: 40px;
+        height: 40px;
+        margin-top: 30px;
+        margin-left: 24px;
+    }
+
+    .button--item4 {
+        width: 40px;
+        height: 40px;
+        margin-top: -39px;
+        margin-left: 80px;
+    }
+
+    .button--item5 {
+        width: 40px;
+        height: 40px;
+        margin-top: -39px;
+        margin-left: 135px;
+    }
 }
