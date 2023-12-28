@@ -98,41 +98,112 @@ body {
     margin-left: 80px;
 }
 
-.main-section__list {
-    list-style-type: none;
+
+
+
+.nav__list--indent {
+    margin-bottom: 268px;
+}
+
+.nav__list--reset {
+    list-style: none;
+    margin: 0;
     padding: 0;
 }
 
-.main-section__list li {
-    margin-bottom: 10px;
+.nav__item--margin-b {
+    margin-left: 14px;
+    margin-bottom: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.nav__item--margin-b:first-child {
     margin-top: 30px;
-    margin-left: 24px;
+}
+
+.nav__link {
+    position: relative;
+    color: #1b1c21;
+    font-family: TT Lakes;
     font-size: 16px;
-    color: #1B1C21;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.2px;
 }
 
-.main-section__list {
-    display: block;
-    padding: 5px;
-    transition: 0.3s ease;
+a {
+    text-decoration: none;
 }
 
-.main-section__list li:first-of-type {
-    margin-bottom: 10px;
-    margin-top: 25px;
-    color: #7E7E82;
+
+
+/* Эффекты на ссылках списков */
+.nav__link--effect:hover {
+    color: #7e7e82;
 }
 
-.main-section__list li:first-of-type::before {
+.nav__link--effect:focus::before {
     content: "";
+    color: #7e7e82;
     position: absolute;
-    top: 105px;
-    bottom: 0;
-    left: 1px;
+    top: -4px;
+    left: -24px;
+    display: inline-block;
+    background-image: url("img/active-field.svg");
     width: 4px;
     height: 32px;
-    background-color: #41F6D7;
 }
+
+.nav__link--effect:focus {
+    color: #7e7e82;
+}
+
+.nav__link--effect:active {
+    color: #7e7e82;
+}
+
+
+.highlighted-image {
+    display: none;
+    position: absolute;
+    top: -5px;
+    left: -21px;
+}
+
+/* Стили для эффекта при наведении */
+.nav__link--effect {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* Показываем изображение при наведении */
+.nav__link--effect:hover .highlighted-image {
+    display: inline-block;
+}
+
+/* Показываем изображение при активации (нажатии) */
+.nav__link--effect:active .highlighted-image {
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .button--item3 {
     width: 40px;
@@ -171,53 +242,89 @@ body {
     margin-top: 30px;
 }
 
-.footer__mail {
-    display: flex;
-    margin-top: 20px;
-    margin-left: 24px;
-    color: black;
+.footer-address--effect:hover {
+    opacity: 0.5;
+    transition: 0.3s;
 }
 
-.footer__number {
-    display: flex;
+.footer-address__mail {
+    color: #1b1c21;
     font-family: TT Lakes;
-    font-size: 24px !important;
-    line-height: 32px;
-    letter-spacing: -0.6000000238418579px;
-    text-align: left;
-    font-weight: 700 !important;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.footer-address__mail--display-b {
+    display: block;
+    margin-bottom: 8px;
+    margin-left: 19px;
+    padding: 5px;
     margin-top: 10px;
-    margin-left: 24px;
-    color: black;
 }
 
-.footer__lang-list {
-    list-style-type: none;
+
+
+.footer-address__tel--display-b {
+    display: block;
+    margin-bottom: 30px;
+    margin-left: 14px;
+    padding: 10px;
+}
+
+.footer-address__tel {
+    color: #1b1c21;
+    font-family: TT Lakes;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+}
+
+.footer__button-lang {
+    color: #1b1c21;
+    font-family: TT Lakes;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
     padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 
-.footer__lang-item {
-    width: 24px;
-    height: 24px;
-    margin-left: 24px;
-    display: flex;
-    flex-wrap: nowrap;
+.footer__button-lang--indent-l {
+    margin-left: 19px;
+    padding: 5px;
+    color: #7e7e82;
+    max-width: 40px;
+    min-height: 40px;
 }
 
-.footer__lang-item_gray {
-    color: #7E7E82 !important;
-    margin-top: 50px;
+
+.footer__button-lang--indent {
+    margin-bottom: 18px;
+    padding: 5px;
+    max-width: 40px;
+    min-height: 40px;
 }
 
-.footer__lang-item_en {
-    margin-top: -24px;
-    margin-left: 60px;
+.footer__button-lang:hover {
+    opacity: 0.5;
+    transition: 0.3s;
 }
 
-.footer__lang-item_ch {
-    margin-top: -24px;
-    margin-left: 100px;
-}
+
+
 
 @media only screen and (max-height: 768px) {
     .button--item3 {

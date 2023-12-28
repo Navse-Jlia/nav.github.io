@@ -28,20 +28,59 @@
         </header>
     </div>
 
-    <section class="main-section">
-        <div class="section-container-paragraph">
-            <ul class="main-section__list">
-                <li>Ремонт техники</li>
-                <li>Услуги и сервисы</li>
-                <li>Корпоративным клиентам</li>
-                <li>Продавцам техники</li>
-                <li>Партнерам</li>
-                <li>Производителям</li>
-                <li>Наши сервисные центры</li>
-                <li>Контакты</li>
-            </ul>
-        </div>
-    </section>
+
+    <nav class="nav">
+        <ul class="nav__list nav__list--reset nav__list--indent">
+            <li class="nav__item nav__item--margin-b">
+                <a class="nav__link nav__link--effect nav__link--text-color" href="#">
+                    Ремонт техники
+                    <img class="highlighted-image" src="./img/highlighta.png" alt="Highlighted Image">
+                </a>
+            </li>
+            <li class="nav__item nav__item--margin-b">
+                <a class="nav__link nav__link--effect" href="#">
+                    Услуги и&nbsp;сервисы
+                    <img class="highlighted-image" src="./img/highlighta.png" alt="Highlighted Image">
+                </a>
+            </li>
+            <li class="nav__item nav__item--margin-b">
+                <a class="nav__link nav__link--effect" href="#">
+                    Корпоративным клиентам
+                    <img class="highlighted-image" src="./img/highlighta.png" alt="Highlighted Image">
+                </a>
+            </li>
+            <li class="nav__item nav__item--margin-b">
+                <a class="nav__link nav__link--effect" href="#">
+                    Продавцам техники
+                    <img class="highlighted-image" src="./img/highlighta.png" alt="Highlighted Image">
+                </a>
+            </li>
+            <li class="nav__item nav__item--margin-b">
+                <a class="nav__link nav__link--effect" href="#">
+                    Партнерам
+                    <img class="highlighted-image" src="./img/highlighta.png" alt="Highlighted Image">
+                </a>
+            </li>
+            <li class="nav__item nav__item--margin-b">
+                <a class="nav__link nav__link--effect" href="#">
+                    Производителям
+                    <img class="highlighted-image" src="./img/highlighta.png" alt="Highlighted Image">
+                </a>
+            </li>
+            <li class="nav__item nav__item--margin-b">
+                <a class="nav__link nav__link--effect" href="#">
+                    Наши сервисные центры
+                    <img class="highlighted-image" src="./img/highlighta.png" alt="Highlighted Image">
+                </a>
+            </li>
+            <li class="nav__item nav__item--margin-b">
+                <a class="nav__link nav__link--effect" href="#">
+                    Контакты
+                    <img class="highlighted-image" src="./img/highlighta.png" alt="Highlighted Image">
+                </a>
+            </li>
+        </ul>
+    </nav>
 
     <footer class="footer">
         <!-- Кнопка звонка -->
@@ -57,16 +96,26 @@
             <img src="img/profile.png" alt="Кнопка профиля">
         </button>
         <!-- Контактные данные -->
-        <div class="footer__contact-list">
-            <a href="mailto:mail@cps.com" class="footer__mail">mail@cps.com</a>
-            <a href="tel:88008908900" class="footer__number">8 800 890 8900</a>
-        </div>
+        <address class="footer-address">
+            <span>
+                <a href="mailto:mail@cps.com"
+                    class="footer-address__mail footer-address__mail--display-b footer-address--effect">mail@cps.com</a>
+            </span>
+            <span>
+                <a href="tel:88008908900"
+                    class="footer-address__tel footer-address__tel--display-b footer-address--effect">8 800 890 8900</a>
+            </span>
+        </address>
         <!-- Список языков -->
-        <ul class="footer__lang-list">
-            <li class="footer__lang-item footer__lang-item_gray">RU</li>
-            <li class="footer__lang-item footer__lang-item_en">EN</li>
-            <li class="footer__lang-item footer__lang-item_ch">CH</li>
-        </ul>
+        <button type="button" class="footer__button-lang footer__button-lang--indent footer__button-lang--indent-l">
+            RU
+        </button>
+        <button type="button" class="footer__button-lang footer__button-lang--indent">
+            EN
+        </button>
+        <button type="button" class="footer__button-lang footer__button-lang--indent">
+            CH
+        </button>
     </footer>
 </body>
 
