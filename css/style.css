@@ -200,10 +200,12 @@ body {
     width: 24px;
     height: 24px;
     margin-left: 24px;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .footer__lang-item_gray {
-    color: #7E7E82;
+    color: #7E7E82 !important;
     margin-top: 50px;
 }
 
