@@ -202,17 +202,17 @@ body {
     margin-left: 24px;
 }
 
-.footer__lang_gray {
+.footer__lang-item_gray {
     color: #7E7E82;
     margin-top: 50px;
 }
 
-.footer__lang_en {
+.footer__lang-item_en {
     margin-top: -24px;
     margin-left: 60px;
 }
 
-.footer__lang_ch {
+.footer__lang-item_ch {
     margin-top: -24px;
     margin-left: 100px;
 }
